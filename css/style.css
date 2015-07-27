@@ -101,6 +101,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 /****************/
 
 .main {
+	height:auto !important;
 	min-height: 405px;
 }
 
