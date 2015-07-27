@@ -1,0 +1,655 @@
+/*
+
+Template Name: Ntwrk
+Author: Denis Terekhov (Reynart)
+Author Site: http://reynart.ru
+Version: 1.0
+
+*/
+
+/* RESET */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body,h1,h2,h3,h4,h5,h6,p{padding:0;margin:0;-webkit-margin-before:0;-webkit-margin-after:0}blockquote,q{quotes:none}li,ol,ul{list-style:none;padding:0;margin:0}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}caption,table,tbody,td,tfoot,th,thead,tr{padding:0;margin:0;border:0;border-spacing:0}
+
+/***** MAIN *****/
+/****************/
+
+.wrapper {
+	background: #373b47;
+	width: 740px;
+	border: 2px solid #212531;
+	border-radius: 5px;
+}
+
+/***** HEADER *****/
+/******************/
+
+.header {
+	background: #212531;
+	height: 120px;
+}
+
+.header .logo {
+	background: #fff;
+	display: block;
+	float: left;
+	width: 220px;
+	height: 120px;
+}
+
+.header .logo img {
+	display: block;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+
+.short-info {
+	float: left;
+	padding: 33px 0px;
+}
+
+.short-info .item {
+	float: left;
+	margin-right: 30px;
+}
+
+.short-info .item:first-child {
+	margin-left: 20px;
+}
+
+.short-info .item .title {
+	display: block;
+	float: left;
+	font-family: "Open Sans", sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	color: #fff;
+	padding: 15px 0;
+	margin-right: 15px;
+}
+
+.short-info .item .info {
+	display: block;
+	float: left;
+	background: #13161f;
+	font-family: "Open Sans", sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	color: #fff;
+	padding: 15px;
+	border-radius: 3px;
+}
+
+.short-info .item .info img {
+	vertical-align: middle;
+}
+
+.short-info a {
+	font-family: "Open Sans", sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dashed #fff;
+}
+
+.short-info a:hover {
+	border-bottom: none;
+}
+
+/***** MAIN *****/
+/****************/
+
+.main {
+	height: auto;
+	overflow: hidden;
+}
+
+/***** SIDEBAR *****/
+/*******************/
+
+.sidebar {
+	float: left;
+	background: #373b47;
+	width: 220px;
+}
+
+.sidebar .title {
+	background: #212531;
+	font-family: "Open Sans", sans-serif;
+	font-size: 22px;
+	font-weight: lighter;
+	color: #60ca82;
+	padding: 25px 20px;
+}
+
+.sidebar .title .fa {
+	float: right;
+	margin-top: 5px;
+}
+
+/***** NAVIGATION *****/
+/**********************/
+
+.nav-menu {
+	height: auto;
+	overflow: hidden;
+}
+
+.nav-menu a {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px 20px;
+	border-left: 5px solid #373b47;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.nav-menu .fa {
+	color: #60ca82;
+	margin-right: 15px;
+}
+
+.nav-menu a:hover {
+	background: #f5f5f5;
+	color: #252525;
+	border-left: 5px solid #60ca82;
+}
+
+.nav-menu .active {
+	background: #f5f5f5;
+	color: #252525;
+	border-left: 5px solid #60ca82;
+}
+
+.content {
+	background: #fff;
+	float: left;
+	width: 520px;
+	min-height: 400px;
+	overflow: hidden;
+}
+
+.item-block {
+	display: none;
+	padding: 10px;
+}
+
+.item-block.active {
+	display: block;
+}
+
+/***** NEWS BLOCK *****/
+/**********************/
+
+.news {
+	height: auto;
+	overflow: hidden;
+	border: 2px solid #eaedf2;
+	border-radius: 7px;
+}
+
+.news .title {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	color: #797f8d;
+	font-weight: lighter;
+	background: #eaedf2;
+	padding: 10px 15px;
+}
+
+.news .title .fa {
+    display: block;
+    float: left;
+    font-size: 20px;
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+.full-news {
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+	border-bottom: 1px solid #eaedf2;
+}
+
+.full-news:hover {
+	background: #fbfbfd;
+}
+
+.full-news .news-info {
+	float: left;
+	width: 370px;
+	height: auto;
+	overflow: hidden;
+}
+
+.full-news .fa {
+	display: block;
+	float: left;
+	font-size: 22px;
+	color: #2eb29a;
+	margin-top: 12px;
+	margin-right: 10px;
+}
+
+.full-news .news-title {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #2eb29a;
+	margin-bottom: 2px;
+}
+
+.full-news .news-description {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #000;
+}
+
+.full-news .news-date {
+	display: block;
+	float: right;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #000;
+}
+
+/***** LINE UP *****/
+/*******************/
+
+.lineup {
+	height: auto;
+	overflow: hidden;
+}
+
+.lineup .title {
+	display: block;
+	background: #60ca82;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	color: #fff;
+	padding: 15px 20px;
+}
+
+.lineup .overview {
+	background: url(../images/pitch.png) no-repeat center;
+	width: 100%;
+	height: 386px;
+}
+
+.overview .player {
+	float: left;
+	min-width: 50px;
+	margin: 0 auto;
+}
+
+.overview .player img {
+	display: block;
+	margin: 0 auto;
+}
+
+.overview .player .name {
+	display: block;
+	background: #212531;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	margin-top: -5px;
+}
+
+.overview #gk {
+	height: auto;
+	overflow: hidden;
+}
+
+.overview .player {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.overview #player1 {
+    position: relative;
+    left: 180px;
+}
+
+.overview #player2 {
+    position: relative;
+    left: 180px;
+}
+
+.overview #mid {
+	height: auto;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.overview #player3 {
+	margin-left: 100px;
+}
+
+.overview #attack {
+	height: auto;
+	overflow: hidden;
+	margin-top: 40px;
+}
+
+.overview #player7 {
+	margin-left: 125px;
+}
+
+/***** TROPHY *****/
+/******************/
+
+.trophy {
+	height: auto;
+	overflow: hidden;
+	border: 2px solid #eaedf2;
+	border-radius: 7px;
+}
+
+.trophy .title {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	color: #797f8d;
+	font-weight: lighter;
+	background: #eaedf2;
+	padding: 10px 15px;
+}
+
+.trophy .title .fa {
+    display: block;
+    float: left;
+    font-size: 20px;
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+.full-trophy {
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+	border-bottom: 1px solid #eaedf2;
+}
+
+.full-trophy:hover {
+	background: #fbfbfd;
+}
+
+.full-trophy .trophy-info {
+	float: left;
+	width: 370px;
+	height: auto;
+	overflow: hidden;
+}
+
+.full-trophy .fa {
+	display: block;
+	float: left;
+	font-size: 22px;
+	color: #2eb29a;
+	margin-top: 12px;
+	margin-right: 10px;
+}
+
+.full-trophy .trophy-title {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #2eb29a;
+	margin-bottom: 2px;
+}
+
+.full-trophy .trophy-description {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #000;
+}
+
+.full-trophy .trophy-date {
+	display: block;
+	float: right;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #000;
+}
+
+/***** CONTACT *****/
+/******************/
+
+.contact {
+	height: auto;
+	overflow: hidden;
+	border: 2px solid #eaedf2;
+	border-radius: 7px;
+}
+
+.contact .title {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	color: #797f8d;
+	font-weight: lighter;
+	background: #eaedf2;
+	padding: 10px 15px;
+}
+
+.contact .title .fa {
+    display: block;
+    float: left;
+    font-size: 20px;
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+.full-contact {
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+	border-bottom: 1px solid #eaedf2;
+}
+
+.full-contact:hover {
+	background: #fbfbfd;
+}
+
+.full-contact .contact-info {
+	float: left;
+	width: 370px;
+	height: auto;
+	overflow: hidden;
+}
+
+.full-contact .fa {
+	display: block;
+	float: left;
+	font-size: 22px;
+	color: #2eb29a;
+	margin-top: 12px;
+	margin-right: 10px;
+}
+
+.full-contact .contact-title {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #2eb29a;
+	margin-bottom: 2px;
+}
+
+.full-contact .contact-description {
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+
+}
