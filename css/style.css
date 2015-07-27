@@ -104,6 +104,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 	min-height: 405px;
 }
 
+.clear {
+	clear: both;
+}
+
 /***** SIDEBAR *****/
 /*******************/
 
