@@ -101,8 +101,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 /****************/
 
 .main {
-	height: auto;
-	overflow: hidden;
+	min-height: 400px;
 }
 
 /***** SIDEBAR *****/
