@@ -16,7 +16,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 
 .wrapper {
 	background: #373b47;
-	width: 740px;
+	width: 713px;
 	border: 2px solid #212531;
 	border-radius: 5px;
 }
@@ -33,7 +33,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 	background: #fff;
 	display: block;
 	float: left;
-	width: 220px;
+	width: 193px;
 	height: 120px;
 }
 
@@ -50,11 +50,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 
 .short-info .item {
 	float: left;
-	margin-right: 30px;
 }
 
 .short-info .item:first-child {
 	margin-left: 20px;
+	margin-right: 25px;
 }
 
 .short-info .item .title {
@@ -111,7 +111,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 .sidebar {
 	float: left;
 	background: #373b47;
-	width: 220px;
+	width: 193px;
 }
 
 .sidebar .title {
